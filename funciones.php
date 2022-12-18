@@ -178,8 +178,8 @@ function actualizarImagen()
         $nombre = $_FILES["subirfoto"]["name"];
         $file_type = strtolower(pathinfo($nombre, PATHINFO_EXTENSION));
         $rutaTemp = $_FILES["subirfoto"]["tmp_name"];
-        $rutaDestino = dirname(__FILE__) . "\img\perfil";
-        $rutaCompleta = $rutaDestino . "\\" . $_SESSION["usuario"] . ".";
+        $rutaDestino = dirname(__FILE__) . "/img/perfil";
+        $rutaCompleta = $rutaDestino . "/" . $_SESSION["usuario"] . ".";
 
 
         //Comprobaremos la extensión para que solo sea png o jpg

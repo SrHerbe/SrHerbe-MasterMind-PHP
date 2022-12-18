@@ -1,0 +1,29 @@
+body {
+    background-color: #111111;
+}
+
+.pista_linea {
+    border: 1px solid #111111;
+}
+
+* {
+    color: white    ;
+}
+
+select {
+    background-color: #111111;
+    border: 1px solid #cccccc;
+}
+
+label {
+    color: #cccccc !important;
+}
+
+input {
+    color: #111111;
+}
+
+#presentacion_logo,#flecha_down {
+    filter: brightness(0) invert(1) !important;
+}
+

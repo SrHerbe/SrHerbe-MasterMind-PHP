@@ -1,0 +1,159 @@
+
+.tablero_vacio {
+    margin-left: 199px !important;
+}
+
+@media (max-width: 1500px) {
+    #jugar {
+        justify-content: flex-start;
+    }
+    .tablero_vacio {
+        margin-left: 146px !important;
+    }
+}
+
+@media (max-width: 850px) {
+    #jugar {
+        padding: 2em 0 2em 0;
+        width: 100%;
+    }
+    #formulario {
+        top: 10em;
+    }
+}
+
+@media (max-width: 800px) {
+    .tablero {
+        margin-left: -35px;
+    }
+    .tablero_vacio {
+        margin-left: 111px !important;
+    }
+    .tablero_linea {
+        gap: 0.1em;
+    }
+    .tablero_input {
+        width: 3em;
+        height: 3em;
+    }
+    .item_vacio {
+        width: 3em;
+        height: 3em;
+    }
+    .vacio {    
+        gap: 0.1em;
+    }
+    .pista_linea {
+        height: 3em;
+        gap: 0.1em;
+    }
+}
+
+@media (max-width: 560px) {
+    #formulario {
+        padding: 1em 0.5em 1em 0.5em;
+    }
+    #formulario input {
+        width: 3em;
+        height: 3em;
+    }
+    .tablero {
+        margin-left: -85px;
+    }
+    .tablero_vacio {
+        margin-left: 61px !important;
+    }
+}
+
+@media (max-width: 510px) {
+    .pista_linea {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        min-width: 0;
+    }
+    .tablero {
+        width: auto;
+        gap: 0.3em;
+    }
+    
+}
+
+@media (max-width: 435px) {
+    .tablero_input {
+        width: 2.5em;
+        height: 2.5em;
+    }
+    .item_vacio {
+        width: 2.5em;
+        height: 2.5em;
+    }
+    .tablero_linea {
+        min-width: auto;
+    }
+    .pista_linea {
+        height: 2.5em;
+    }
+    #column2 {
+        width: 4em;
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 400px) {
+    #formulario {
+        flex-direction: row;
+        background-color: white;
+        border-radius: 0;
+        gap: 1em;
+        width: 20em;
+        justify-content: center;
+        position: sticky !important;
+        border-radius: 50px;
+    }
+    .tablero {
+        margin-left: -140px;
+        margin-top: 5em;
+    }
+    .vacio {
+        gap: 1.5px;
+    }
+    .vacio_contenido {
+        margin-top: 5em;
+    }
+    .tablero_vacio {
+        margin-left: 6px !important;
+    }
+    .formulario_contenedor {
+        position: sticky;
+        top: 30px;
+    }
+}
+
+@media (max-width: 335px) {
+    .tablero_input {
+        width: 2em;
+        height: 2em;
+    }
+    .item_vacio {
+        width: 2em;
+        height: 2em;
+    }
+    #column2 {
+        width: auto;
+    }
+    #formulario {
+        gap: 0.3em;
+        width: 16.5em;
+        justify-content: center;
+    }
+    .pista_linea {
+        height: 2em;
+    }
+    .tablero_pista {
+        width: 0.8em;
+        height: 0.8em;
+    }
+}
+

@@ -1,0 +1,74 @@
+#contenedor_resultados {
+    border-radius: 30px;
+    background-color: rgb(0 0 0 / 10%);
+    margin-top: 2em;
+    width: 50%;
+}
+
+#contenedor_win {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+#msg_win {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.win_item {
+    font-size: 20px;
+}
+
+
+#contenedor_lose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+#msg_lose {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.lose_item {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#buttons {
+    margin-top: 1em;
+    display: flex;
+    gap: 1em;
+}
+
+#buttons a {
+    text-decoration: none;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(0, 87, 255);
+}
+#buttons a:hover {
+    opacity: 0.7;
+}

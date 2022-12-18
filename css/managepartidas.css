@@ -1,0 +1,76 @@
+#partidas {
+    margin-top: 2em;
+}
+
+.partidas_content {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr,td,th {
+    border: 1px solid black;
+    padding: 0.5em;
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+tr > td:last-child > a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+tr > td:last-child > a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1050px) {
+    tr,td,th {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 1050px) {
+    tr > td:nth-child(5), tr > td:nth-child(6) {
+        display: none;
+    }
+    tr > th:nth-child(5), tr > th:nth-child(6) {
+        display: none;
+    }
+}
+
+@media (max-width: 725px) {
+    tr > th:nth-child(4) {
+        max-width: 80px !important;
+    }
+}
+@media (max-width: 655px) {
+    tr,td,th {
+        max-width: 100px;
+    }
+}
+@media (max-width: 540px) {
+    tr > th:nth-child(3), tr > th:nth-child(4) {
+        display: none;
+    }
+    tr > td:nth-child(3), tr > td:nth-child(4) {
+        display: none;
+    }
+}
+
+@media (max-width: 350px) {
+    .centrado {
+        margin: 0 10px 0 10px;
+        width: 95%;
+    }
+    tr, td, th {
+        max-width: 65px;
+    }
+}

@@ -1,0 +1,166 @@
+/* CONTENIDO */
+#jugar {
+	display: flex;
+    flex-direction: row;
+    padding: 2em;
+    align-items: flex-start;
+    gap: 2em;
+    justify-content: center;
+    height: 60em;
+    margin-bottom: 2em;
+}
+
+.formulario_contenedor {
+	width: 114px;
+}
+
+#formulario {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    border-radius: 15px;
+    padding: 1em;
+    box-shadow: 0 0 15px black;
+}
+
+#formulario input {
+	width: 5em;
+	height: 5em;
+	border-radius: 50%;
+	cursor: pointer;
+	border: 1px solid black;
+}
+
+#formulario input[name="rojo"] {
+	background-color: red;
+}
+#formulario input[name="amarillo"] {
+	background-color: yellow;
+}
+#formulario input[name="verde"] {
+	background-color: green;
+}
+#formulario input[name="azul"] {
+	background-color: blue;
+}
+#formulario input[name="naranja"] {
+	background-color: orange;
+}
+#formulario input[name="morado"] {
+	background-color: purple;
+}
+
+
+/* Tablero input */
+
+.tablero {
+	display: flex;
+    gap: 1em;
+    flex-direction: row;
+    width: 423px;
+}
+
+.tablero_linea {
+	display: flex;
+    flex-direction: row;
+    gap: 1em;
+    min-width: 19em;
+}
+
+.tablero_column {
+	display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.pista_linea {
+    display: flex;
+    height: 4em;
+    align-items: center;
+    gap: 0.5em;
+    min-width: 6em;
+    border: 1px solid transparent;
+}
+
+.tablero_input {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tablero_pista {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* TEST TABLERO VACÍO */
+.tablero_vacio {
+    position: absolute;
+    margin-left: 35px;
+	z-index: -1;
+}
+
+.vacio_contenido {
+	display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.vacio {
+    display: flex;
+    gap: 1em;
+}
+
+.item_vacio {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    border: 1px solid black;
+	background-color: gray;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    border-bottom: 1px solid #cccc;
+    gap: 1em;
+}
+
+.options a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 1em 0.5em 1em;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 50px;
+    transition: 0.1s;
+}
+.options a:hover {
+    opacity: 0.7;
+}
+
+#reiniciar {
+    background-color: rgb(0, 87, 255);
+}
+
+#salir {
+    background-color: red;
+}
+
+
+

@@ -1,0 +1,323 @@
+/* CONTENIDO */
+html {
+    scroll-behavior: smooth;
+}
+
+#contenido{
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+}
+
+.presentacion {
+	margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.presentacion_content {
+    display: flex;
+    gap: 2em;
+    padding: 2em;
+	padding-left: 0px;
+}
+
+.presentacion_content > .txt {
+    min-width: 60%;
+    font-size: 1.25em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+	justify-content: center;
+}
+
+#math_brain {
+    width: 30em;
+    border-radius: 30px;
+}
+
+.presentacion_botones {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 25em;
+    gap: 1em;
+    padding: 2em 0 2em 0;
+}
+
+.presentacion_botones a {
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    justify-content: center;
+}
+
+.presentacion_botones a:hover {
+    opacity: 0.9;
+    transform: 
+        rotate(-3deg)
+        scale(1.05);
+}
+
+.presentacion_botones > div {
+    display: flex;
+    gap: 1em;
+}
+
+#teach_hat {
+    width: 2em;
+    filter: brightness(0) invert(1);
+}
+
+#presentacion_que_es {
+    background-color: rgb(0, 87, 255);
+}
+#presentacion_como_jugar {
+    background-color: #8b82ff;
+}
+#presentacion_ir_jugar {
+    width: 380px;
+    text-align: center;
+    background-color: rgb(0 0 0 / 80%);
+    border: 3px solid #ff4b4b;
+    box-shadow: 0 0 15px 2px #000000;
+}
+
+#presentacion_logo {
+    width: 30em;
+}
+
+.separador {
+    border-bottom: 1px solid #111111;
+    filter: blur(1px);
+}
+
+#contenedor_flecha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: blur(0.6px);
+    margin-top: 3em;
+    margin-bottom: 4em;
+}
+
+#flecha_down img {
+    height: 3em;
+    opacity: 0.8;
+}
+
+
+/* ----------------------------------------------------------------- */
+
+
+.rain{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    z-index: -1;
+    justify-content: space-evenly;
+}
+
+.rain span{
+    position: relative;
+    bottom: 10px;
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    border-radius: 50%;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(120s / var(--i));
+    transform-origin: bottom;
+    opacity: 0.5;
+    filter: blur(1px);
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0) scale(1);
+    }
+
+    70%{
+        transform: translateY(1800px) scale(1);
+    }
+
+    100%{
+        transform: translateY(1800px) scale(0);
+    }
+}
+
+#que_es {
+    margin-bottom: 4em;
+}
+
+.que_es_contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.que_es_contenedor > h1 {
+    font-size: 3em;
+}
+
+.que_es_contenedor > p {
+    font-size: 1.5em;
+}
+
+/* ------------------------------------------------------------------------ */
+
+.como_jugar {
+	font-size: 1.25em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.como_jugar > h1{
+	font-size: 3em;
+}
+
+.jugar_txt {
+    display: flex;
+    align-items: center;
+	gap: 1em;
+	margin-top: 1em;
+}
+
+.como_jugar {
+    padding-bottom: 4em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1210px) {
+    #math_brain {
+        width: 24em;
+    }
+}
+
+@media (max-width: 1100px) {
+    #presentacion_logo {
+        width: auto;
+    }
+}
+@media (max-width: 980px) {
+    .presentacion_content {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    .presentacion_botones {
+        align-items: center;
+        width: 22em;
+    }
+    .presentacion {
+        margin-top: 0em;
+        margin-bottom: 0em;
+    }
+    @keyframes animate{
+        0%{
+            transform: translateY(0) scale(1);
+        }
+    
+        70%{
+            transform: translateY(2200px) scale(1);
+        }
+    
+        100%{
+            transform: translateY(2200px) scale(0);
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    #presentacion_logo {
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 520px) {
+    .presentacion_content {
+        padding: 2em 0 2em 0;
+    }
+    .presentacion_content > .txt {
+        align-items: center;
+    }
+    #presentacion_logo {
+        margin-left: 0;
+        width: 14em;
+    }
+    .presentacion_botones {
+        align-items: center;
+        width: 16em;
+    }
+    #presentacion_ir_jugar {
+        width: 178px;
+        height: 2em;
+    }
+    #math_brain {
+        width: 14em;
+    }
+    #flecha_down img {
+        height: 2em;
+        opacity: 0.8;
+    }
+    .presentacion_botones > div {
+        flex-direction: column;
+    }
+
+    #presentacion_como_jugar {
+        height: 2em;
+    }
+    #presentacion_que_es {
+        height: 2em;
+    }
+}
+
+@media (max-width: 495px) {
+    @keyframes animate{
+        0%{
+            transform: translateY(0) scale(1);
+        }
+    
+        70%{
+            transform: translateY(2800px) scale(1);
+        }
+    
+        100%{
+            transform: translateY(2800px) scale(0);
+        }
+    }
+}
